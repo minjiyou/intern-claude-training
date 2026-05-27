@@ -37,14 +37,9 @@ Used in Module 2 (pandas exercises), Module 4 Exercise 7 (TSS distance analysis)
 
 ---
 
-## 3. Mini-Project Dataset — Modules 5–6
+## 3. Mini-Project Dataset
 
-**Directory:** `data/reference/`
-
-Add the cohort dataset to `data/reference/` before distributing:
-- Recommended: a subset of a real RNA-seq or ChIP-seq experiment from the lab
-- Include a brief description in `data/reference/README.md` under "Mini-project — Cohort dataset"
-- Do not include raw FASTQ files larger than ~100 MB — use processed files (e.g., count matrices, peak BED files) where possible
+No action needed. The mini-project uses the same Fur ChIP-exo files interns download themselves in Module 4. Nothing extra to add before distributing.
 
 ---
 
@@ -81,7 +76,6 @@ Interns need a Claude.ai Pro plan account to use plan mode (Shift+Tab).
 
 - [ ] `[SRR_ACCESSION]` replaced in `data/reference/README.md`
 - [ ] `ec_annotation_20100903_DHK_cSRNA_with_ortho.gff` copied to `data/reference/`
-- [ ] Cohort dataset added to `data/reference/` with description in README
 - [ ] Codespace test-launched and all tools verified
 - [ ] Plan mode tested in Codespace terminal
 - [ ] All interns have Claude Pro plan accounts

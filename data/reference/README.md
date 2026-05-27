@@ -27,18 +27,11 @@ fastq-dump [SRR_ACCESSION] --outdir data/reference/ --skip-technical
 mv data/reference/[SRR_ACCESSION].fastq data/reference/reads.fastq
 ```
 
-After downloading, this directory should contain:
-```
-data/reference/
-├── NC_000913.fasta
-└── reads.fastq
-```
-
 ---
 
-## Module 4 — Downloads
+## Module 4 — Downloads (via Claude Code)
 
-Use Claude Code to fetch these. Give it the GEO series URL and ask it to download to `data/reference/`:
+Give Claude Code the GEO series URL and ask it to download to `data/reference/`:
 ```
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE54901
 ```
@@ -48,6 +41,6 @@ https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE54901
 
 ---
 
-## Mini-project — Cohort dataset
+## Mini-project
 
-Added by the instructor before distributing. See `instructor/BEFORE_DISTRIBUTING.md`.
+No additional dataset. The mini-project uses the same Fur ChIP-exo files downloaded in Module 4.
