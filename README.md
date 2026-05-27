@@ -8,19 +8,17 @@
 
 ## Overview
 
-A 6-week training curriculum teaching interns how to use Claude Code to accelerate bioinformatics work in the SBML Lab (KAIST GSEB).
-
-This training **runs alongside** the lab's existing 9-session bioinformatics curriculum — it does not replace it. Each module pairs with specific existing sessions.
+A 6-week training curriculum for SBML Lab (KAIST GSEB) interns. Covers Python, GFF/pandas data processing, NGS alignment, motif analysis, and an independent mini-project — all using Claude Code as the primary tool.
 
 ## Curriculum
 
-| Module | Topic | Paired with |
-|--------|-------|-------------|
-| 1 | What is Claude Code | Sessions 1–2 |
-| 2 | GFF parsing + pandas with Claude Code | Sessions 3–5 |
-| 3 | NGS alignment pipeline with Claude Code | Sessions 6–7 |
-| 4 | Papers, MEME, and Biopython with Claude Code | Sessions 8–9 |
-| 5–6 | Independent mini-project | — |
+| Module | Topic |
+|--------|-------|
+| 1 | What is Claude Code |
+| 2 | GFF parsing + pandas with Claude Code |
+| 3 | NGS alignment pipeline with Claude Code |
+| 4 | Papers, MEME, and Biopython with Claude Code |
+| 5–6 | Independent mini-project |
 
 ## Standing Rules
 
@@ -44,7 +42,7 @@ Three custom skills are provided for this training:
 ## Prerequisites
 
 - Claude Code Pro plan account
-- Basic Python (covered in Sessions 1–5)
+- Basic Python (variables, loops, functions, file I/O)
 - Familiarity with the terminal
 
 ## Repository Structure
