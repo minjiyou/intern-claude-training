@@ -6,16 +6,12 @@ RUN conda config --add channels defaults && \
     conda config --add channels bioconda && \
     conda config --set channel_priority flexible
 
-# Install mamba and create sbml env (meme excluded — 5.5.x Perl deps removed from bioconda)
+# Create sbml env with Python 3.10 so meme=5.4.1 constraint is satisfied
 RUN conda install -n base -c conda-forge mamba -y && \
-    mamba create -n sbml -y python=3.11 \
+    mamba create -n sbml -y python=3.10 \
       ipykernel jupyter notebook \
-      bowtie2 samtools bedtools sra-tools \
+      bowtie2 samtools bedtools sra-tools "meme=5.4.1" \
       biopython pysam scipy pandas matplotlib seaborn entrez-direct && \
-    conda clean -afy
-
-# Install meme in a separate layer pinned to 5.4.1 (predates perl-sys-info dep chain)
-RUN /opt/conda/bin/mamba install -n sbml -y -c bioconda -c conda-forge "meme=5.4.1" && \
     conda clean -afy
 
 # Set sbml env as default in PATH — no conda activation needed
