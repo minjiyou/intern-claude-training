@@ -9,9 +9,6 @@ dist/
 build/
 .env
 
-# Lab-internal reference files (instructor copies these; not committed)
-data/reference/ec_annotation_20100903_DHK_cSRNA_with_ortho.gff
-
 # Downloaded and generated data files (not committed; lives in data/reference/)
 data/reference/*.fastq
 data/reference/*.fasta
