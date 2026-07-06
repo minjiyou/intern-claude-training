@@ -29,7 +29,7 @@ RUN conda config --add channels defaults && \
 RUN conda install -n base -c conda-forge mamba -y && \
     mamba create -n sbml -y python=3.11 \
       ipykernel jupyter notebook \
-      bowtie2 samtools bedtools sra-tools \
+      bowtie2 samtools bedtools "sra-tools>=3.0" \
       biopython pysam scipy pandas openpyxl matplotlib seaborn entrez-direct && \
     conda clean -afy
 
