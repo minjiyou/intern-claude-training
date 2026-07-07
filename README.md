@@ -1,5 +1,7 @@
 # SBML Intern Claude Code Training
 
+> **Step 0 — Fork this repo first.** Before you do anything else, **fork this repository to your own GitHub account** and work in your fork — that is how you save and hand back your work (see [Submitting Your Work](#submitting-your-work)). Launch the Codespace **from your fork**, not from this template, or you won't be able to push your commits.
+
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/sbml-lab/intern-claude-training)
 
 > The Codespace will install all required tools automatically (bowtie2, samtools, MEME, Biopython, pandas/openpyxl, Claude Code CLI). First launch takes ~5 minutes.
@@ -30,6 +32,30 @@ All interns follow these rules throughout the training:
 2. `/debug` before asking for help when something breaks
 3. `/explain [concept]` before Googling
 4. Plan mode (Shift+Tab twice) before writing any pipeline
+
+## Submitting Your Work
+
+You hand back your work through **git**, not by sharing your Codespace. At the start, **fork this repository to your own GitHub account** and do all your work in your fork. When you're done (and at the end of every session), commit and push, then give your instructor **the URL of your fork** (`github.com/<your-username>/intern-claude-training`).
+
+**What to commit — and where it must go:**
+
+| Deliverable | Path (must be here to reach your instructor) |
+|---|---|
+| Completed notebooks | `notebooks/0*.ipynb` |
+| Session logs (from `/log`) | `log/session-log.md` |
+| Scripts you wrote (e.g. `makegff.py`) | `notebooks/` |
+| **MetaScope exported figures** | **`notebooks/`** — e.g. `notebooks/module3_chipexo_metascope.png` |
+
+> **⚠️ Two things that will silently NOT reach your instructor:**
+> 1. **Anything in `data/reference/`** — raw reads, genomes, BAMs, and generated GFFs there are gitignored (too large to commit). That's fine; your instructor regenerates them. But it means **your MetaScope figure must go in `notebooks/`, not `data/reference/`.**
+> 2. You export MetaScope figures on **your own computer** (MetaScope isn't in the Codespace). Upload the PNG back into the Codespace, drop it in `notebooks/`, and commit it — otherwise there is no record you completed the visualization.
+
+**End-of-session commit (every session):**
+```bash
+git add notebooks/ log/
+git commit -m "feat(moduleN): <what you did>"
+git push
+```
 
 ## Included Skills
 
