@@ -31,7 +31,7 @@
 ### Done
 - Learned how to fetch reference data (reads and genome) from a DB via code and used both files as input to generate a SAM file.
 - Learned that Bowtie is a mapping algorithm that rapidly aligns tens of millions of short NGS reads to a reference, producing a SAM file with each read's mapped coordinate, strand, and mapping quality as tab-separated text.
-- Converted SAM to BAM, then in makegff.py extracted only the 5' end coordinate (keeping only the + strand) and visualized the result in MetaScope.
+- Converted SAM to BAM, then in makegff.py extracted each read's 5' end coordinate, keeping `+` and `-` strands separate (not discarded), and visualized the result in MetaScope.
 
 ### Broke / Struggled
 - The reference FASTA and the chipexo.gff had different genome names, so MetaScope treated them as two different genomes; fixed by making the names match.

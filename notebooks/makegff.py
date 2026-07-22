@@ -34,7 +34,10 @@ def write_gff(counts, gff_path, log_scale=False):
         for (seqname, strand, position), count in sorted(
             counts.items(), key=lambda kv: (kv[0][0], kv[0][2], kv[0][1])
         ):
-            score = round(math.log2(count + 1), 3) if log_scale else count
+            magnitude = round(math.log2(count + 1), 3) if log_scale else count
+            # score 부호로 strand를 표시: '-' strand는 음수로 써서 같은 track 안에서
+            # MetaScope가 위(+)/아래(-)로 mirror해서 그리게 한다 (feature 이름은 하나로 통일).
+            score = magnitude if strand == "+" else -magnitude
             gff.write(
                 f"{seqname}\tmakegff\tfiveprime\t{position}\t{position}\t{score}\t{strand}\t.\tdepth={count}\n"
             )
