@@ -42,3 +42,21 @@
 - Deeply realized how much the lab's own MetaScope visualization tool eases analysis of experimental results.
 
 ---
+
+## Session — 2026-07-28
+
+### Done
+- Read a paper on how FUR binding directly represses or activates iron uptake under three different conditions, and ran several analyses using the paper's data.
+- Used the MEME algorithm on all 144 FUR binding sites under iron-replete conditions to find a shared short DNA motif (the fur box): took the midpoint of each ChIP-exo start/end, cut 50bp on each side to build MEME input sequences, and got a significant 24bp motif with a meaningful p-value, confirming the ChIP-exo coordinates correspond to sequences actually recognized by the FUR protein.
+- Learned how to parse sequences with Biopython while building the MEME input.
+- Integrated three tracks (annotation, rnaseq.gff, fur_sites.gff) in MetaScope to visually confirm whether FUR binding sites are directly repressive.
+
+### Broke / Struggled
+- Took some time to understand the logic of the function used for TSS distance analysis.
+- Had to think through how to scale the y-axis for rnaseq.gff in MetaScope (e.g., log scaling).
+
+### Learned
+- Learned multiple ways to check whether a binding site sits near a TSS, in order to determine if it's at an operator or promoter position — the histogram-based distance analysis was especially clarifying.
+- Understood that connecting binding sites to a regulatory mechanism requires integrating RNA-seq with ChIP-exo results, not just the ChIP-exo data alone.
+
+---
