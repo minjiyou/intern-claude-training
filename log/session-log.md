@@ -60,3 +60,19 @@
 - Understood that connecting binding sites to a regulatory mechanism requires integrating RNA-seq with ChIP-exo results, not just the ChIP-exo data alone.
 
 ---
+
+## Session — 2026-08-06
+
+### Done
+- Implemented the code for the operon-size enrichment hypothesis drafted in Part 2, building the full pipeline to test it.
+- Ran the pipeline and checked the visualization results; found that operon size is not skewed toward the size expected by the hypothesis.
+
+### Broke / Struggled
+- Expected FUR-regulated operons to be enriched for single-gene operons, but the background distribution actually had more non-single-gene operons than expected.
+- Lacked sufficient grounds to judge the result as biologically significant, which was disappointing.
+
+### Learned
+- Learned about a database of E. coli transcriptional data and how to compare it against experimental results for analysis.
+- Learned the definition and use case of the Mann-Whitney U test, a newly encountered statistical distribution/test.
+
+---
