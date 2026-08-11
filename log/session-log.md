@@ -76,3 +76,17 @@
 - Learned the definition and use case of the Mann-Whitney U test, a newly encountered statistical distribution/test.
 
 ---
+
+## Session — 2026-08-11
+
+### Done
+- Wrote the step-by-step code in Part 4 and defined what each step does.
+
+### Broke / Struggled
+- Got a small p-value, so had to re-check the unmapped TUs; rebuilt the mapping logic to catch TUs that could still be mapped, and the p-value dropped after re-mapping.
+
+### Learned
+- Learned that choosing which distribution to use, and which visualization/graph type to use, both matter.
+- Realized that mapping is especially important in bioinformatics data analysis.
+
+---
