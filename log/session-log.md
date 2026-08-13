@@ -77,20 +77,6 @@
 
 ---
 
-## Session — 2026-08-13
-
-### Done
-- 위에서 진행한 step의 코드를 전부 돌리고 나온 결과를 분석함.
-- 연구 결과를 대표할 수 있는 유의미한 figure를 작성함.
-
-### Broke / Struggled
-- 그림으로 표현하기 어려운 부분은 수치적인 표로 나타내야 함을 알게 됨.
-
-### Learned
-- 연구 결과 자체도 중요하지만, 그것을 도출하기 위한 과정을 보여주는 것도 중요하다는 것을 알게 됨.
-
----
-
 ## Session — 2026-08-11
 
 ### Done
@@ -102,5 +88,19 @@
 ### Learned
 - Learned that choosing which distribution to use, and which visualization/graph type to use, both matter.
 - Realized that mapping is especially important in bioinformatics data analysis.
+
+---
+
+## Session — 2026-08-13
+
+### Done
+- Ran all the step code from above and analyzed the resulting output.
+- Created a meaningful figure that represents the research results.
+
+### Broke / Struggled
+- Realized that parts hard to express visually needed to be shown as a numerical table instead.
+
+### Learned
+- Learned that the research result itself matters, but so does showing the process used to derive it.
 
 ---
